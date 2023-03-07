@@ -3,7 +3,7 @@ const bcrypt = require("bcrypt");
 const Boom = require("@hapi/boom");
 const { messages } = require("../utils/message");
 
-// 1. Create User 
+// Create User 
 const signUp = async (req, res, next) => {
     try{
         const { name, email, password, gender, interest, active} = req.body;
